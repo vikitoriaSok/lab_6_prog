@@ -101,25 +101,30 @@ print(f(a,b))
 
 
 #ЗАДАНИЕ 4
-q=int(input())
-a=[]
-b=[]
-c=[]
-def f(q):
-    if q<2:
-        print("error")
-    else:
-        print (" 1 матрица ")
-        a=list(map(int,input().split()))
-        print (" 2 матрица ")
-        b=list(map(int,input().split()))
-        for i in range (0, q**2):
-            c.append (a[i] + b [i])
-        for i in range (1, q+1):
-            for v in range (q*i - q, q*i):
-                print (c[v], end="")
-            print("")
-print(f(q))
+q = int(input("Введите размер матриц (>2): "))
+if q < 2:
+    print("error")
+else:
+    a = []
+    b = []
+    c = []
+    print("Введите элементы 1й матрицы через пробел:")
+    for i in range(q):
+        row = list(map(int, input().split()))
+        a.append(row)
+    print("Введите элементы 2й матрицы через пробел:")
+    for i in range(q):
+        row = list(map(int, input().split()))
+        b.append(row)
+    for i in range(q):
+        row_sum = []
+        for j in range(q):
+            row_sum.append(a[i][j] + b[i][j])
+        c.append(row_sum)
+    print("Результат сложения матриц:")
+    for row in c:
+        print(" ".join(map(str, row)))
+
 
 
 
