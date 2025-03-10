@@ -1,4 +1,5 @@
 #ЗАДАНИЕ 1
+
 print("сек - s; мин - m; час - h") 
 n, x1 = input("введите время и единицу измерения через пробел: ").split(" ")
 n = int(n)
@@ -41,7 +42,6 @@ print(f(n, x1, x2))
 
 
 
-
 #ЗАДАНИЕ 2
 def f(a, n):
     a1 = a
@@ -72,15 +72,6 @@ n = int(n)
 print(f(a, n))
 
 
-
-
-
-
-
-
-
-
-
 #ЗАДАНИЕ 3
 a,b = map (int, input().split())
 v=0
@@ -96,6 +87,7 @@ def f(a,b):
             if v==0:
                 print(i)
 print(f(a,b))
+
 
 
 
@@ -124,9 +116,6 @@ else:
     print("Результат сложения матриц:")
     for row in c:
         print(" ".join(map(str, row)))
-
-
-
 
 
 
