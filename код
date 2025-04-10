@@ -39,9 +39,6 @@ def f(n, x1, x2):
 print(f(n, x1, x2))
 
 
-
-
-
 #ЗАДАНИЕ 2
 def f(a, n):
     a1 = a
@@ -89,9 +86,6 @@ def f(a,b):
 print(f(a,b))
 
 
-
-
-
 #ЗАДАНИЕ 4
 q = int(input("Введите размер матриц (>2): "))
 if q < 2:
@@ -116,10 +110,6 @@ else:
     print("Результат сложения матриц:")
     for row in c:
         print(" ".join(map(str, row)))
-
-
-
-
 
 
 #ЗАДАНИЕ 5
